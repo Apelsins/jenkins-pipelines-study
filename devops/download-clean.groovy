@@ -7,9 +7,9 @@ pipeline {
       }
 
     stages {
-        stage('build') {
+        stage('git') {
             steps {
-                sh 'mvn --version'
+                git 'https://github.com/Apelsins/jenkins-kube'
             }
         }
     }
